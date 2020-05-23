@@ -16,7 +16,7 @@ struct TreeNode{
 };
 class Solution {
 public:
-    int depth(TreeNode* root)
+    int depth(TreeNode* root)//计算数的深度（板子）
     {
         if(root==nullptr)return 0;
 
@@ -27,8 +27,9 @@ public:
     }
     bool isBalanced(TreeNode* root) {
 
-        if(root==nullptr)return true;
+        if(root==nullptr)return true;//如果为空则返回true
 
+        /*如果根左右的深度小于2，则递归地检查其左右孩子的深度差,直到其左右子树全为空*/
         if(abs(depth(root->left)-depth(root->right))<2){
             return isBalanced(root->left)&&isBalanced(root->right);
         }
