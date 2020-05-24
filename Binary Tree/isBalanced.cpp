@@ -15,7 +15,7 @@ struct TreeNode{
 };
 class Solution {
 public:
-    int depth(TreeNode* root)//计算数的深度（板子）
+    int depth(TreeNode* root)//计算树的深度（板子）
     {
         if(root==nullptr)return 0;
 
