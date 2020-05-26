@@ -6,7 +6,7 @@
 
 ### **求二叉树深度：**
 
-**e.g. `isBalanced` `sumRootToLeaf`**
+**e.g. 0`04.04-isBalanced-easy` `1022-sumRootToLeaf-easy`**
 
 ```c++
 int depth(TreeNode* tree)
@@ -42,4 +42,34 @@ int depth(TreeNode* tree)
 
 一般涉及到树的的三种遍历，并且会根据字符串创建的不同进行讨论。
 
-**e.g.  tree2str**
+**e.g.  `606-tree2str-easy`**
+
+### 层次遍历
+
+**e.g.  `102-levelOrder-medium`**
+
+**宽度优先搜索**
+
+宽度优先搜索顺序与层次遍历顺序完全一致
+
+**宽度优先搜索模板：**
+
+```c++
+void BFS(TreeNode* root)
+{
+	queue<TreeNode*> q;
+    q.push(root);
+    while(q.size()){
+        TreeNode* node=q.front();
+        q.pop();
+        
+        if(node->left!==nullptr){
+            q.push(node->left);
+        }
+        if(node->right!==nullptr){
+            q.push(node->right);
+        }
+    }
+}
+```
+
