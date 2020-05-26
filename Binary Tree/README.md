@@ -6,7 +6,7 @@
 
 ### **求二叉树深度：**
 
-**e.g. 0`04.04-isBalanced-easy` `1022-sumRootToLeaf-easy`**
+**e.g. [`04.04-isBalanced-easy`](04.04-isBalanced-easy.cpp) [`1022-sumRootToLeaf-easy`](1022-sumRootToLeaf-easy.cpp)**
 
 ```c++
 int depth(TreeNode* tree)
@@ -42,11 +42,11 @@ int depth(TreeNode* tree)
 
 一般涉及到树的的三种遍历，并且会根据字符串创建的不同进行讨论。
 
-**e.g.  `606-tree2str-easy`**
+**e.g.  [`606-tree2str-easy`](606-tree2str-easy.cpp)**
 
 ### 层次遍历
 
-**e.g.  `102-levelOrder-medium`**
+**e.g.  [`102-levelOrder-medium`](102-levelOrder-medium.cpp)**
 
 **宽度优先搜索**
 
