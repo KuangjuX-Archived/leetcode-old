@@ -73,3 +73,41 @@ void BFS(TreeNode* root)
 }
 ```
 
+### 翻转二叉树
+
+**e.g.  [`226-invertTree-easy`](226-invertTree-easy.cpp)**  [`951-flipEquiv-medium`](951-flipEquiv-medium.cpp)
+
+**简单的翻转二叉树算法：**
+
+```c++
+void Invert(TreeNode*& tree)
+    {
+        if(tree==nullptr)return;
+        TreeNode* leftTree=tree->left;
+        tree->left=tree->right;
+        tree->right=leftTree;
+        Invert(tree->left);
+        Invert(tree->right);
+
+    }
+```
+
+**层次翻转二叉树（即不一定几次翻转）**
+
+每次翻转后都进行检查：
+
+```c++
+bool flipEquiv(TreeNode* root1, TreeNode* root2) {
+        if(root1==root2){
+            return true;
+        }
+
+        if(root1==nullptr||root2==nullptr||root1->val!=root2->val){
+            return false;
+        }
+
+        return ((flipEquiv(root1->left,root2->right)&&flipEquiv(root1->right,root2->left))
+                ||(flipEquiv(root1->left,root2->left)&&flipEquiv(root1->right,root2->right)));
+    }
+```
+
