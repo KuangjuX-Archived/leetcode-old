@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a repository to store my program for Leetcode. 
+This is a repository to store my program for Leetcode and record summaries. 
 
 ## How to use?
 
