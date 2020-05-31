@@ -75,7 +75,7 @@ void BFS(TreeNode* root)
 
 ### 翻转二叉树
 
-**e.g.  [`226-invertTree-easy`](226-invertTree-easy.cpp)**  [`951-flipEquiv-medium`](951-flipEquiv-medium.cpp)
+**e.g.  [`226-invertTree-easy`](226-InvertTree-easy.cpp)**  [`951-flipEquiv-medium`](951-flipEquiv-medium.cpp)
 
 **简单的翻转二叉树算法：**
 
